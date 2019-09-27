@@ -411,7 +411,7 @@ class PageOne(tk.Frame):
         self.label_7_Combo.set("")
         self.label_7_Combo.grid(row = 8, column = 1)
           
-        label_8 = tk.Label(self, text = "BALL MATERIAL:    ", font=controller.label_font)
+        label_8 = tk.Label(self, text = "DISC MATERIAL:    ", font=controller.label_font)
         label_8.grid(row = 9, column = 0)
         self.label_8_Combo = ttk.Combobox(self, value = GGC_DISC_MATERIAL, state = 'readonly')
         self.label_8_Combo.set("")
