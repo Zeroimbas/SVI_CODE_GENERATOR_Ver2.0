@@ -180,11 +180,11 @@ class StartPage(tk.Frame):
         
         
         button1 = tk.Button(self, text="GGC",
-                            command=lambda: controller.show_frame("PageOne"), fg="white", bg="black", width = 20)
+                            command=lambda: controller.show_frame("PageOne"), fg="white", bg="midnight blue", width = 20)
         button2 = tk.Button(self, text="BV",
-                            command=lambda: controller.show_frame("PageTwo"), fg="white", bg="black")
+                            command=lambda: controller.show_frame("PageTwo"), fg="white", bg="midnight blue")
         button3 = tk.Button(self, text="GGC/Trim",
-                            command=lambda: controller.show_frame("PageThree"), fg="white", bg="black")
+                            command=lambda: controller.show_frame("PageThree"), fg="white", bg="midnight blue")
         
         button1.grid(row = 1, column = 0, columnspan = 2)
         button2.grid(row = 2, column = 0, columnspan = 2)
@@ -369,7 +369,7 @@ class PageOne(tk.Frame):
         label = tk.Label(self, text="GGC Valve Page", font=controller.title_font)
         label.grid(row = 0, column = 0, columnspan = 2, sticky = 'we')
         button = tk.Button(self, text="Go to the previous page",
-                           command=lambda: [controller.show_frame("StartPage"), self.set_default()], fg="white", bg="black", width = 20)
+                           command=lambda: [controller.show_frame("StartPage"), self.set_default()], fg="white", bg="midnight blue", width = 20)
         button.grid(row = 1, column = 0, columnspan = 2)
         
         label_1 = tk.Label(self, text = "ITEM:    ", font=controller.label_font)
@@ -476,7 +476,7 @@ class PageOne(tk.Frame):
         self.special_Note_TextBox = tk.Text(self, width = 10, height = 5, font = "Arial")
         self.special_Note_TextBox.grid(row = 21, columnspan = 2, sticky = 'we')
         
-        Submit = tk.Button(self, text="GENERATE", command=self.generate_code, fg="white", bg="black", width = 20)
+        Submit = tk.Button(self, text="GENERATE", command=self.generate_code, fg="white", bg="midnight blue", width = 20)
         Submit.grid(column = 0, columnspan = 2, sticky = 'we')
     
     
@@ -617,7 +617,7 @@ class PageTwo(tk.Frame):
         label = tk.Label(self, text="Ball Valve Page", font=controller.title_font)
         label.grid(row = 0, column = 0, columnspan = 2, sticky = 'we')
         button = tk.Button(self, text="Go to the previous page",
-                           command=lambda: [controller.show_frame("StartPage"), self.set_default()], fg="white", bg="black")
+                           command=lambda: [controller.show_frame("StartPage"), self.set_default()], fg="white", bg="midnight blue")
         button.grid(row = 1, column = 0, columnspan = 2, sticky = 'we')
         
         label_1 = tk.Label(self, text = "ITEM:    ", font=controller.label_font)
@@ -711,7 +711,7 @@ class PageTwo(tk.Frame):
         self.special_Note_TextBox = tk.Text(self, width = 10, height = 5, font = "Arial")
         self.special_Note_TextBox.grid(row = 20, columnspan = 2, sticky = 'we')
         
-        Submit = tk.Button(self, text="GENERATE", command=self.generate_code, fg="white", bg="black")
+        Submit = tk.Button(self, text="GENERATE", command=self.generate_code, fg="white", bg="midnight blue")
         Submit.grid(columnspan = 2, sticky = 'we')
         
 class PageThree(tk.Frame):
@@ -855,7 +855,7 @@ class PageThree(tk.Frame):
         label = tk.Label(self, text="GGC Valve Page (Trim)", font=controller.title_font)
         label.grid(row = 0, column = 0, columnspan = 2, sticky = 'we')
         button = tk.Button(self, text="Go to the previous page",
-                           command=lambda: [controller.show_frame("StartPage"), self.set_default()], fg="white", bg="black")
+                           command=lambda: [controller.show_frame("StartPage"), self.set_default()], fg="white", bg="midnight blue")
         button.grid(row = 1, column = 0, columnspan = 2, sticky = 'we')
 
         label_1 = tk.Label(self, text = "ITEM:    ", font=controller.label_font)
@@ -930,7 +930,7 @@ class PageThree(tk.Frame):
         self.special_Note_TextBox.grid(row = 16, columnspan = 2, sticky = 'we')
         
         
-        Submit = tk.Button(self, text="GENERATE", command=self.generate_code, fg="white", bg="black")
+        Submit = tk.Button(self, text="GENERATE", command=self.generate_code, fg="white", bg="midnight blue")
         Submit.grid(columnspan = 2, sticky = 'we')
 
 if __name__ == "__main__":
